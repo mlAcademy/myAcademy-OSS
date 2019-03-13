@@ -1,12 +1,12 @@
 <p align="center"><img width=60% src="https://mlacademy.blob.core.windows.net/assets/text_black_large.png"></p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Python](https://img.shields.io/badge/python-v3.5+-blue.svg)
+![React](https://img.shields.io/badge/React-16.8.4-61DAFB.svg)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/mlacademy/myacademy-oss.svg)](https://github.com/mlacademy/myacademy-oss/issues)
 [![Build Status](https://dev.azure.com/mlacademy/mlacademy/_apis/build/status/mlAcademy.frontend?branchName=production)](https://dev.azure.com/mlacademy/mlacademy/_build/latest?definitionId=1&branchName=production)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/github/license/mlacademy/myacademy-oss.svg)](https://opensource.org/licenses/MIT)
 
 # myAcademy Skinnable Interactive Tuition Platform
 
