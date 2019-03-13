@@ -1,0 +1,47 @@
+/* Stripes */
+header .stripes {
+  z-index: -1;
+  display: grid;
+  overflow: hidden;
+  grid: repeat(7, 200px) / repeat(10, 1fr);
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  background-image: $grad1;
+}
+
+@media (max-height: $tablet-breakpoint-vert) {
+  header .stripes {
+    grid: repeat(5, 200px) / repeat(10, 1fr);
+  }
+}
+
+@media (max-height: $phone-breakpoint-vert) and (max-width: $phone-breakpoint) {
+  header .stripes {
+    grid: repeat(5, 20vh) / repeat(10, 1fr);
+  }
+}
+
+#stripes,
+#stripes span {
+  position: absolute;
+}
+
+header .stripes :nth-child(1) {
+  grid-column: span 3;
+  background-image: $grad2;
+}
+
+header .stripes :nth-child(2) {
+  grid-area: 3 / span 3 / auto / -1;
+  background-image: $grad3;
+}
+
+header .stripes :nth-child(3) {
+  grid-row: 4;
+  grid-column: span 5;
+  background-image: $grad4;
+}
+header .stripes :nth-child(4) {
+  grid-area: 7 / span 3 / auto / -1;
+  background-image: $grad4;
+}

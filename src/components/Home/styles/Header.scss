@@ -1,0 +1,59 @@
+@import './Stripes.scss';
+/* Top of page */
+.splash-bg {
+  z-index: -10;
+}
+
+.container-lg {
+  max-width: 1040px;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-wide,
+.container-xl {
+  margin: 0 auto;
+  margin-top: 0px;
+  padding: 0 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+.splash-container {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  height: calc(100vh - 3.25rem);
+  top: 0;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 2000px) {
+  .splash-container {
+    padding-top: 20rem;
+    align-items: flex-start;
+  }
+
+  .tagline h2 {
+    font-size: 50pt;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 1500px) {
+  .splash-container {
+    padding-top: 20rem;
+    align-items: flex-start;
+  }
+}
+
+.tagline {
+  max-width: 40rem;
+}
+
+.tagline h2 {
+  color: rgba(255, 255, 255, 0.808);
+  font-size: 25pt;
+}

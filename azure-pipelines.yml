@@ -1,0 +1,19 @@
+# myAcademy Frontend Build
+
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+- script: |
+    yarn install
+    yarn build
+  displayName: 'yarn install and build'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: 'build' 
+    artifactName: 'drop' 
+    publishLocation: 'Container'

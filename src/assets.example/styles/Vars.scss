@@ -1,0 +1,15 @@
+$primary: #ccc;
+$link: #81bafc;
+$info: #1f7cba;
+$grad1: linear-gradient(#969696, $primary);
+$grad2: linear-gradient(to right, rgba(182, 182, 182, 0.432), #6161619c);
+$grad3: linear-gradient(to left, #4b4b4bb0, #c2c2c29c);
+$grad4: linear-gradient(to right, rgba(161, 161, 161, 0.692), #bbbbbb9c);
+
+$phone-breakpoint: 450px;
+$phone-breakpoint-vert: 900px;
+
+$tablet-breakpoint: 1500px;
+$tablet-breakpoint-vert: 1200px;
+
+$border-radius: 1rem;

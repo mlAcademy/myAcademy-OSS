@@ -1,0 +1,64 @@
+@media (min-width: 750px) {
+  .ace-editor {
+    top: 3.25rem;
+    height: calc(100vh - 6.5rem);
+    width: 50vw;
+  }
+
+  .ace-editor-has-result {
+    height: calc(100vh - 6.5rem - 3rem - 20vh);
+  }
+
+  .result-window {
+    position: absolute;
+    overflow: scroll;
+    bottom: 3rem;
+    height: 20vh;
+    width: 50vw;
+    padding: 0.5rem;
+  }
+
+  .submit-button-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    height: 3rem;
+    padding: 0.1rem;
+  }
+
+  .submit-button {
+    left: calc(25vw - 5rem);
+    width: 10rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .ace-editor {
+    display: none;
+    top: 3.25rem;
+    height: calc(50vh - 3.25rem);
+    width: 100vw;
+  }
+  .ace-editor-has-result {
+    display: none;
+    height: calc(100vh - 6.5rem - 3.25rem - 20vh);
+  }
+
+  .result-window {
+    display: none;
+    position: absolute;
+    overflow: scroll;
+    bottom: 0rem;
+    height: 20vh;
+    width: 50vw;
+    padding: 0.5rem;
+  }
+
+  .submit-button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 10rem;
+    left: calc(25vw - 5rem);
+  }
+}

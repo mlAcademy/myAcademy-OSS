@@ -1,0 +1,32 @@
+@import '../../assets/styles/Vars.scss';
+@import './styles/Header.scss';
+@import './styles/Main.scss';
+
+.animated-svg {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.animated-svg::after {
+  box-shadow: 0px 11px 39px -11px #000;
+  opacity: 0;
+}
+
+.animated-svg:hover {
+  -webkit-transform: translate(0, -0.5rem);
+  transform: translate(0, -0.5rem);
+}
+
+.animated-svg:hover::after {
+  opacity: 1;
+}
+
+@media (max-height: $phone-breakpoint-vert) and (max-width: $phone-breakpoint) {
+  #signup-window {
+    display: none;
+  }
+}
+
+#signup-window {
+  box-shadow: 0px 11px 39px -11px #000;
+}

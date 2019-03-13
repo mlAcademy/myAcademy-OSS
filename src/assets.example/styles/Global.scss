@@ -1,0 +1,29 @@
+@import './Vars.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.act-like-link {
+  background: none !important;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  cursor: pointer;
+}
+
+.full-height-bg {
+  z-index: 0;
+  position: absolute;
+  top: 3.25rem;
+  min-height: calc(100vh - 3.25rem);
+  width: 100vw;
+}
+
+.primary-grad {
+  background-image: $grad1;
+}

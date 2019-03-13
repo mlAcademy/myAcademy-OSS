@@ -1,0 +1,69 @@
+@media (min-width: 750px) {
+  .lab-content,
+  .lab-editor {
+    position: absolute;
+    top: 3.25rem;
+    height: calc(100vh - 6.5rem);
+    height: -o-calc(100vh - 6.5rem);
+    height: -webkit-calc(100vh - 6.5rem);
+    height: -moz-calc(100vh - 6.5rem);
+  }
+  .lab-content {
+    left: 0;
+    width: 50vw;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .lab-editor {
+    right: 0;
+    width: 50vw;
+  }
+
+  .labs-navbar {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  /*.lab-content,
+  .lab-editor {
+    position: absolute;
+    height: calc(50vh - 3.25rem);
+    height: -o-calc(50vh - 3.25rem);
+    height: -webkit-calc(50vh - 3.25rem);
+    height: -moz-calc(50vh - 3.25rem);
+    width: 100vw;
+  }
+  .lab-content {
+    top: 50vh;
+    overflow: scroll;
+  }*/
+
+  .lab-content {
+    -webkit-overflow-scrolling: touch;
+    height: calc(100vh - 6.5rem);
+    overflow: scroll;
+  }
+
+  .lab-editor {
+    display: none;
+    top: 3.25rem;
+  }
+  .labs-navbar {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.floating-button {
+  position: absolute;
+  bottom: 6rem;
+  right: 0;
+  z-index: 99999;
+}
+
+.labs-wrapper {
+  z-index: 1;
+}
