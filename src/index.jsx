@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 import './index.scss';
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <FirebaseContext.Provider value={new Firebase()}>
       <Notifications />
       <App />

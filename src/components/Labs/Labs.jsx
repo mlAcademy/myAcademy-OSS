@@ -62,7 +62,7 @@ function Labs(props) {
       </button>
     );
 
-  const NextButton = () =>
+  const NextButton = buttonProps =>
     typeof lessons[lessonNum + 1] !== 'undefined' ? (
       <button className="button is-primary" onClick={() => handleNext()} type="button">
         Next
@@ -72,7 +72,7 @@ function Labs(props) {
     ) : (
       <button
         className="button is-success"
-        onClick={() => handleFinish(props.authUser.uid)}
+        onClick={() => handleFinish(buttonProps.authUser.uid)}
         type="button"
       >
         Finish
