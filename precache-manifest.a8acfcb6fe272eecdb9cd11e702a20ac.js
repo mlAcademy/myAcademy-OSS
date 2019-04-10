@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "27ee0d01ecef6706b147",
+    "revision": "13ea1e6b7a5eeb04e56f",
     "url": "/myacademy-oss/static/css/main.e89cca86.chunk.css"
   },
   {
-    "revision": "27ee0d01ecef6706b147",
-    "url": "/myacademy-oss/static/js/main.27ee0d01.chunk.js"
+    "revision": "13ea1e6b7a5eeb04e56f",
+    "url": "/myacademy-oss/static/js/main.13ea1e6b.chunk.js"
   },
   {
     "revision": "eac38007ec8e2361c3ca",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/myacademy-oss/static/media/text_white.588c39da.png"
   },
   {
-    "revision": "144db654437dbfe67c453226b45930cf",
+    "revision": "f708ea264ba797a411198eb7349fcc53",
     "url": "/myacademy-oss/index.html"
   }
 ];
