@@ -1,10 +1,19 @@
-$primary: #ccc;
-$link: #81bafc;
-$info: #1f7cba;
-$grad1: linear-gradient(#969696, $primary);
-$grad2: linear-gradient(to right, rgba(182, 182, 182, 0.432), #6161619c);
-$grad3: linear-gradient(to left, #4b4b4bb0, #c2c2c29c);
-$grad4: linear-gradient(to right, rgba(161, 161, 161, 0.692), #bbbbbb9c);
+// Get hue, saturation and lightness of your primary color and enter them below
+$primary-h: 0; // Hue
+$primary-s: 0; // Saturation
+$primary-l: 80; // Lightness
+$primary: hsl($primary-h, $primary-s, $primary-l);
+$dark-primary: hsl($primary-h + 10, $primary-s - 15, $primary-l - 20);
+$light-primary: hsl($primary-h + 10, $primary-s + 30, $primary-l + 15);
+
+// Optional overrides
+$link: hsl(212, 95%, 75%);
+$info: hsl(204, 71%, 43%);
+
+$grad1: linear-gradient($dark-primary, $primary);
+$grad2: linear-gradient(to right, hsl($primary-h + 20, $primary-s, $primary-l), $light-primary);
+$grad3: linear-gradient(to left, $dark-primary, $light-primary);
+$grad4: linear-gradient(to right, $primary, $light-primary);
 
 $phone-breakpoint: 450px;
 $phone-breakpoint-vert: 900px;

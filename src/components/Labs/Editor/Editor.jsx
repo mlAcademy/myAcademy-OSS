@@ -17,6 +17,7 @@ const defaultProps = {};
 
 function Editor(props) {
   const { lessonNum, codeSnippet } = props;
+  const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState(``);
   const [lastLessonNum, setLessonNum] = useState(0);
   const [currentCode, setCode] = useState(codeSnippet);
@@ -34,8 +35,11 @@ function Editor(props) {
   }
 
   function computeOutput() {
-    console.log(currentCode);
-    getOutput(currentCode).then(res => setResult(res));
+    setIsLoading(true);
+    getOutput(currentCode).then(res => {
+      setResult(res);
+      setIsLoading(false);
+    });
   }
 
   function hasResult() {
@@ -50,7 +54,7 @@ function Editor(props) {
 
   return hasResult() ? (
     <>
-      <div className="ace-editor-has-result">
+      <div className="ace-editor">
         <AceEditor
           style={style}
           mode="python"
@@ -73,12 +77,16 @@ function Editor(props) {
       </div>
 
       <div className="result-window has-background-light">
+        <button type="button" className="button is-info" onClick={() => setResult('')}>
+          <i className="fas fa-times" style={{ color: 'white' }} />
+        </button>
         <p className="is-size-4">Result:</p>
         <p className="is-family-code">{result}</p>
       </div>
       <div className="submit-button-wrapper has-background-light">
         <button
-          className="button is-info submit-button"
+          type="button"
+          className={`button is-info submit-button ${isLoading && 'is-loading'}`}
           onClick={computeOutput}
           style={{ width: '10rem' }}
         >
@@ -112,7 +120,8 @@ function Editor(props) {
       </div>
       <div className="submit-button-wrapper">
         <button
-          className="button is-info submit-button"
+          type="button"
+          className={`button is-info submit-button ${isLoading && 'is-loading'}`}
           onClick={computeOutput}
           style={{ width: '10rem' }}
         >

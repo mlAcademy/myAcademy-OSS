@@ -8,6 +8,7 @@
   position: relative;
   display: inline-block;
   width: 30rem;
+  min-width: 375px;
   overflow-wrap: normal;
   border-radius: $border-radius;
   box-shadow: 0px 1px 2px #ccc;
@@ -60,10 +61,17 @@ button:focus {
   height: 7rem;
 }
 
+@media (max-width: 700px) {
+  .topic-content {
+    padding: 0.5rem;
+    height: auto;
+  }
+}
+
 $pill-height: 1.6rem;
 .topic-wrapper > .status-pill {
   position: absolute;
-  z-index: 100;
+  z-index: 500;
   top: 5%;
   right: 5%;
   height: $pill-height;
@@ -73,16 +81,21 @@ $pill-height: 1.6rem;
   border-radius: 1rem;
   font-weight: 700;
 }
+
 .topic-wrapper > .complete {
-  color: white;
-  font-weight: 700;
-  background-color: $primary;
+  color: hsl(45, 65%, 20%);
+  background-color: hsl(45, 65%, 87%);
 }
 
 .topic-wrapper > .available {
-  color: black;
-  font-weight: 700;
-  background-color: $link;
+  color: hsl(104, 52%, 20%);
+  background-color: hsl(104, 52%, 80%);
+}
+
+.topic-wrapper > .comingSoon {
+  cursor: not-allowed;
+  color: hsl(0, 79%, 20%);
+  background-color: hsl(0, 79%, 87%);
 }
 
 .disabled {

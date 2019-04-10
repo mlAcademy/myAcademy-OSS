@@ -1,20 +1,20 @@
 import axios from 'axios';
 
-const apiUrl = process.env.REACT_APP_APIURL;
+const apiUrl = process.env.REACT_APP_API_URL;
 
 export function getTopics() {
-  return axios.get(`${apiUrl}topics`);
+  return axios.get(`${apiUrl}/topics`);
 }
 
 export function getLessonsForTopic(id) {
-  return axios.get(`${apiUrl}lessons/`, {
+  return axios.get(`${apiUrl}/lessons/`, {
     params: { topic: id },
   });
 }
 
 export function getOutput(input) {
   return axios
-    .get(`${apiUrl}compute/`, {
+    .get(`${apiUrl}/compute/`, {
       params: { input },
     })
     .then(res => {
@@ -27,15 +27,15 @@ export function getOutput(input) {
 }
 
 export function initializeUserWithUid(uid) {
-  return axios.post(`${apiUrl}students/?uid=${uid}&action=create-user`);
+  return axios.post(`${apiUrl}/students/?uid=${uid}&action=create-user`);
 }
 
 export function getCompletedTopics(uid) {
-  return axios.get(`${apiUrl}students/`, { params: { uid } }).then(res => {
+  return axios.get(`${apiUrl}/students/`, { params: { uid } }).then(res => {
     return res.data.topics;
   });
 }
 
 export function addCompletedTopic(uid, id) {
-  return axios.post(`${apiUrl}students/?uid=${uid}&action=add-topic&topic-id=${id}`);
+  return axios.post(`${apiUrl}/students/?uid=${uid}&action=add-topic&topic-id=${id}`);
 }

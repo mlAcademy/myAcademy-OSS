@@ -12,7 +12,8 @@
     left: 0;
     width: 50vw;
     overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflowscrolling: touch;
+    webkitoverflowscrolling: touch;
   }
 
   .lab-editor {
