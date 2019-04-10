@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c816c7a8a79d1d11bf34",
+    "revision": "4af57ed22b2b889bd99e",
     "url": "/myAcademy-OSS/static/css/main.e89cca86.chunk.css"
   },
   {
-    "revision": "c816c7a8a79d1d11bf34",
-    "url": "/myAcademy-OSS/static/js/main.c816c7a8.chunk.js"
+    "revision": "4af57ed22b2b889bd99e",
+    "url": "/myAcademy-OSS/static/js/main.4af57ed2.chunk.js"
   },
   {
     "revision": "ca5b19e0bfe3b3a046e7",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/myAcademy-OSS/static/media/text_white.588c39da.png"
   },
   {
-    "revision": "e76d03ca2c0e44e1d8d57ab1e82fb752",
+    "revision": "05cc92a333644da4f1c4ceb94689fcd4",
     "url": "/myAcademy-OSS/index.html"
   }
 ];
