@@ -1,5 +1,6 @@
 import axios from 'axios';
-import { apiUrl } from '../assets/config';
+
+const apiUrl = process.env.REACT_APP_APIURL;
 
 export function getTopics() {
   return axios.get(`${apiUrl}topics`);

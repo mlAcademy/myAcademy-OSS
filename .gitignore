@@ -25,3 +25,6 @@ yarn-error.log*
 
 \.idea/
 /src/assets
+
+.env.development
+.env.production
